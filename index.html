@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Tienda Antonella</title>
 </head>
 
 <body>
+<div class="card">
+  <h3>Producto</h3>
+  <p>$1000</p>
+  <button onclick="sumar()">+</button>
+  <span id="cantidad">0</span>
+  <button onclick="restar()">-</button>
+</div>
 
-    <!-- NAVBAR -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="registro.html">Registro</a>
-        <a href="#">Logout</a>
-    </nav>
+<script>
+let cantidad = 0;
 
-    <!-- ICONO / NOMBRE -->
-    <h1>🛍️ Tienda Antonella</h1>
+function sumar() {
+  cantidad++;
+  document.getElementById("cantidad").innerText = cantidad;
+}
 
-    <!-- CATEGORÍAS -->
-    <h2>Categorías</h2>
-    <ul>
-        <li><a href="categoria1.html">Ropa</a></li>
-        <li><a href="categoria2.html">Tecnología</a></li>
-        <li><a href="categoria3.html">Accesorios</a></li>
-    </ul>
+function restar() {
+  if (cantidad > 0) {
+    cantidad--;
+    document.getElementById("cantidad").innerText = cantidad;
+  }
+}
+</script>
+<!-- 🔽 NAVBAR VA ACÁ -->
+  <div id="navbar"></div>
 
+  <h1>Bienvenida a mi tienda</h1>
+
+  <!-- resto de la página -->
+
+  <script>
+    const paginas = [
+      { nombre: "Inicio", url: "index.html" },
+      { nombre: "Login", url: "login.html" },
+      { nombre: "Registro", url: "registro.html" }
+    ];
+
+    const navbar = document.getElementById("navbar");
+
+    paginas.forEach(p => {
+      navbar.innerHTML += `<a href="${p.url}">${p.nombre}</a> `;
+    });
+  </script>
 </body>
 </html>
