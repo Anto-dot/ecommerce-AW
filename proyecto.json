@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "categoria": "notebooks",
+    "titulo": "Notebook Lenovo",
+    "descripcion": "Notebook Lenovo IdeaPad 15.6 pulgadas",
+    "precio": 850000,
+    "imagen": "https://picsum.photos/300?1"
+  },
+  {
+    "id": 2,
+    "categoria": "notebooks",
+    "titulo": "Notebook HP",
+    "descripcion": "Notebook HP Ryzen 5",
+    "precio": 900000,
+    "imagen": "https://picsum.photos/300?2"
+  },
+  {
+    "id": 3,
+    "categoria": "notebooks",
+    "titulo": "Notebook Asus",
+    "descripcion": "Notebook Asus VivoBook",
+    "precio": 950000,
+    "imagen": "https://picsum.photos/300?3"
+  },
+
+  {
+    "id": 4,
+    "categoria": "celulares",
+    "titulo": "Samsung A55",
+    "descripcion": "Celular Samsung Galaxy A55",
+    "precio": 650000,
+    "imagen": "https://picsum.photos/300?4"
+  },
+  {
+    "id": 5,
+    "categoria": "celulares",
+    "titulo": "Moto G84",
+    "descripcion": "Motorola Moto G84",
+    "precio": 500000,
+    "imagen": "https://picsum.photos/300?5"
+  },
+  {
+    "id": 6,
+    "categoria": "celulares",
+    "titulo": "iPhone 13",
+    "descripcion": "Apple iPhone 13",
+    "precio": 1200000,
+    "imagen": "https://picsum.photos/300?6"
+  }
+]
