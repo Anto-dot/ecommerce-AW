@@ -15,3 +15,19 @@ carrito.forEach(producto => {
     </div>
     `;
 });
+function eliminarProducto(id)
+{
+    let carrito =
+    JSON.parse(localStorage.getItem("carrito"));
+
+    carrito = carrito.filter(
+        producto => producto.id !== id
+    );
+
+    localStorage.setItem(
+        "carrito",
+        JSON.stringify(carrito)
+    );
+
+    location.reload();
+}
